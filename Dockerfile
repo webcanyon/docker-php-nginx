@@ -25,6 +25,9 @@ COPY config/bashrc /root/.bashrc
 COPY config/bash_profile /root/.bash_profile
 COPY config/vim_profile /root/.vimrc
 
+COPY config/hosts /root/hosts
+RUN cat /root/hosts >> /etc/hosts
+
 # Configure supervisord
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
