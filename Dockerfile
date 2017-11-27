@@ -7,7 +7,7 @@ RUN apk --no-cache add --update php7 php7-fpm php7-mysqli php7-json php7-openssl
     php7-zlib php7-xml php7-phar php7-intl php7-dom php7-xmlreader php7-ctype \
     php7-tokenizer php7-xdebug php7-opcache php7-sockets php7-redis php7-pdo_mysql \
     php7-dev postgresql-dev php7-pdo php7-pdo_pgsql php7-pgsql php7-session php7-mbstring \
-    php7-gd php7-fileinfo php7-simplexml php7-xmlwriter php7-xml git ncurses\
+    php7-gd php7-fileinfo php7-simplexml php7-xmlwriter php7-xml php7-zip php7-bz2 git ncurses\
     nginx supervisor curl bash bash-doc bash-completion nodejs nodejs-npm openssh vimdiff
 
 RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
